@@ -24,18 +24,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btnOpenLengthConvActivity"
-        android:text="@string/greeter_speedbtn"/>
+        android:text="@string/global_speed"/>
     <Button
         android:id="@+id/btnOpenMassConvActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btnOpenSpeedConvActivity"
-        android:text="@string/greeter_massbtn"/>
+        android:text="@string/global_mass"/>
     <Button
         android:id="@+id/btnOpenTemperatureConvActivtity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/btnOpenMassConvActivity"
-        android:text="@string/greeter_temperaturebtn"/>
+        android:text="@string/global_temperature"/>
 
 </android.support.constraint.ConstraintLayout>

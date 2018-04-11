@@ -13,17 +13,17 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class LengthConvActivity extends AppCompatActivity {
+public class MassConvActivity extends AppCompatActivity {
 
     @BindView(R.id.btnConvert) Button btnConvert;
-    @BindView(R.id.etLengthSource) EditText etLengthSource;
+    @BindView(R.id.etMassSource) EditText etMassSource;
     @BindView(R.id.sUnitPickerSource) Spinner sUnitPickerSource;
     @BindView(R.id.sUnitPickerDestination) Spinner sUnitPickerDestination;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_length_conv);
+        setContentView(R.layout.activity_mass_conv);
 
         ButterKnife.bind(this);
 
@@ -46,11 +46,11 @@ public class LengthConvActivity extends AppCompatActivity {
         String srcValueText, srcType, destType, srcMsg, destMsg;
 
         // get field values
-        srcValueText = etLengthSource.getText().toString();
+        srcValueText = etMassSource.getText().toString();
         if (srcValueText.length() == 0) {
             Toast.makeText(
                     this,
-                    getString(R.string.global_length) + " must not be empty!",
+                    getString(R.string.global_mass) + " must not be empty!",
                     Toast.LENGTH_SHORT).show();
             return;
         }

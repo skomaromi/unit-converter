@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LengthConvActivity"
+    tools:context=".SpeedConvActivity"
     android:padding="@dimen/global_layoutpadding">
 
     <TextView
@@ -13,20 +13,20 @@
         android:layout_height="wrap_content"
         android:text="@string/global_convert"/>
     <EditText
-        android:id="@+id/etLengthSource"
+        android:id="@+id/etSpeedSource"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/global_length"
+        android:hint="@string/global_speed"
         android:inputType="numberDecimal"
         app:layout_constraintTop_toBottomOf="@id/tvConvert"/>
     <Spinner
         android:id="@+id/sUnitPickerSource"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/length_units"
+        android:entries="@array/speed_units"
         android:paddingTop="@dimen/global_spinner_paddingtop"
         android:paddingBottom="@dimen/global_spinner_paddingbottom"
-        app:layout_constraintTop_toBottomOf="@id/etLengthSource"/>
+        app:layout_constraintTop_toBottomOf="@id/etSpeedSource"/>
     <TextView
         android:id="@+id/tvConvertTo"
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
         android:id="@+id/sUnitPickerDestination"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/length_units"
+        android:entries="@array/speed_units"
         android:paddingTop="@dimen/global_spinner_paddingtop"
         android:paddingBottom="@dimen/global_spinner_paddingbottom"
         app:layout_constraintTop_toBottomOf="@id/tvConvertTo"/>

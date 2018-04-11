@@ -17,9 +17,20 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ResultActivity"
+            android:label="@string/result_activitytitle" />
+        <activity
             android:name=".LengthConvActivity"
-            android:label="@string/global_length"></activity>
-        <activity android:name=".ResultActivity"></activity>
+            android:label="@string/global_length" />
+        <activity
+            android:name=".SpeedConvActivity"
+            android:label="@string/global_speed" />
+        <activity
+            android:name=".MassConvActivity"
+            android:label="@string/global_mass" />
+        <activity
+            android:name=".TemperatureConvActivity"
+            android:label="@string/global_temperature" />
     </application>
 
 </manifest>

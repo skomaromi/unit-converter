@@ -1,17 +1,43 @@
 <resources>
     <string name="app_name">Unit Converter</string>
     <string name="greeter_intro">Convert between units of:</string>
-    <string name="greeter_speedbtn">Speed</string>
-    <string name="greeter_massbtn">Mass</string>
-    <string name="greeter_temperaturebtn">Temperature</string>
+
     <string name="global_length">Length</string>
-    <string name="global_convertbtn">Convert</string>
+    <string name="global_speed">Speed</string>
+    <string name="global_mass">Mass</string>
+    <string name="global_temperature">Temperature</string>
+
     <string name="global_convert">Convert</string>
+    <string name="global_to">to</string>
+    <string name="result_activitytitle">Result</string>
 
     <string-array name="length_units">
+        <item>m</item>
         <item>mm</item>
+        <item>in</item>
+        <item>ft</item>
+        <item>mi</item>
+    </string-array>
+
+    <string-array name="speed_units">
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>mph</item>
+        <item>kn</item>
+        <item>ft/s</item>
+    </string-array>
+
+    <string-array name="mass_units">
         <item>kg</item>
+        <item>t</item>
+        <item>lb</item>
+        <item>oz</item>
+    </string-array>
+
+    <string-array name="temperature_units">
         <item>K</item>
-        <item>mol</item>
+        <item>\u00b0C</item>
+        <item>\u00b0F</item>
+        <item>\u00b0R</item>
     </string-array>
 </resources>
