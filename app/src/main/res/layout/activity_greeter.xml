@@ -11,31 +11,38 @@
         android:id="@+id/tvIntroText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/greeter_intro"/>
+        android:text="@string/greeter_intro" />
 
     <Button
         android:id="@+id/btnOpenLengthConvActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvIntroText"
-        android:text="@string/global_length"/>
+        android:drawableLeft="@drawable/fi_length"
+        android:text="@string/global_length"
+        app:layout_constraintTop_toBottomOf="@id/tvIntroText" />
+
     <Button
         android:id="@+id/btnOpenSpeedConvActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btnOpenLengthConvActivity"
-        android:text="@string/global_speed"/>
+        android:drawableLeft="@drawable/fi_speed"
+        android:text="@string/global_speed"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenLengthConvActivity" />
+
     <Button
         android:id="@+id/btnOpenMassConvActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btnOpenSpeedConvActivity"
-        android:text="@string/global_mass"/>
+        android:drawableLeft="@drawable/fi_mass"
+        android:text="@string/global_mass"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenSpeedConvActivity" />
+
     <Button
         android:id="@+id/btnOpenTemperatureConvActivtity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btnOpenMassConvActivity"
-        android:text="@string/global_temperature"/>
+        android:drawableLeft="@drawable/fi_temperature"
+        android:text="@string/global_temperature"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenMassConvActivity" />
 
 </android.support.constraint.ConstraintLayout>
