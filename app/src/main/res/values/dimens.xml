@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="global_layoutpadding">16dp</dimen>
+    <dimen name="global_spinner_paddingtop">16dp</dimen>
+    <dimen name="global_spinner_paddingbottom">8dp</dimen>
+    <dimen name="result_tvbig">34sp</dimen>
+</resources>

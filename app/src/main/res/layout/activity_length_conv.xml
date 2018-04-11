@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LengthConvActivity"
+    android:padding="@dimen/global_layoutpadding">
+
+    <TextView
+        android:id="@+id/tvConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/global_convert"/>
+    <EditText
+        android:id="@+id/etLengthSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/global_length"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/tvConvert"/>
+    <Spinner
+        android:id="@+id/sUnitPickerSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/length_units"
+        android:paddingTop="@dimen/global_spinner_paddingtop"
+        android:paddingBottom="@dimen/global_spinner_paddingbottom"
+        app:layout_constraintTop_toBottomOf="@id/etLengthSource"/>
+    <TextView
+        android:id="@+id/tvConvertTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="to"
+        app:layout_constraintTop_toBottomOf="@id/sUnitPickerSource"/>
+    <Spinner
+        android:id="@+id/sUnitPickerDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/length_units"
+        android:paddingTop="@dimen/global_spinner_paddingtop"
+        android:paddingBottom="@dimen/global_spinner_paddingbottom"
+        app:layout_constraintTop_toBottomOf="@id/tvConvertTo"/>
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sUnitPickerDestination"
+        android:text="@string/global_convertbtn"/>
+
+
+</android.support.constraint.ConstraintLayout>

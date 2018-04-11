@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="greeter_intro">Convert between units of:</string>
+    <string name="greeter_speedbtn">Speed</string>
+    <string name="greeter_massbtn">Mass</string>
+    <string name="greeter_temperaturebtn">Temperature</string>
+    <string name="global_length">Length</string>
+    <string name="global_convertbtn">Convert</string>
+    <string name="global_convert">Convert</string>
+
+    <string-array name="length_units">
+        <item>mm</item>
+        <item>kg</item>
+        <item>K</item>
+        <item>mol</item>
+    </string-array>
+</resources>

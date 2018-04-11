@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GreeterActivity"
+    android:padding="@dimen/global_layoutpadding">
+
+    <TextView
+        android:id="@+id/tvIntroText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/greeter_intro"/>
+
+    <Button
+        android:id="@+id/btnOpenLengthConvActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvIntroText"
+        android:text="@string/global_length"/>
+    <Button
+        android:id="@+id/btnOpenSpeedConvActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenLengthConvActivity"
+        android:text="@string/greeter_speedbtn"/>
+    <Button
+        android:id="@+id/btnOpenMassConvActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenSpeedConvActivity"
+        android:text="@string/greeter_massbtn"/>
+    <Button
+        android:id="@+id/btnOpenTemperatureConvActivtity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnOpenMassConvActivity"
+        android:text="@string/greeter_temperaturebtn"/>
+
+</android.support.constraint.ConstraintLayout>
